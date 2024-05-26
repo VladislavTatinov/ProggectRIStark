@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPulse</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body> 
+    <header>
+        <h1>PixelPulse</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-button" data-target="about-us">О нас</a></li>
+                <li><a href="#" class="nav-button" data-target="NVIDIA">NVIDIA</a></li>
+                <li><a href="#" class="nav-button" data-target="AMD">AMD</a></li>
+                <li><a href="#" class="nav-button" data-target="Intel">Intel</a></li>
+                <li><a href="#" class="nav-button" data-target="contact-us">Контакты</a></li>
+                
+            </ul>
+        </nav>
+        <img class="nvidia-logo" src="razer-icon-23.jpg" alt="Nvidia Logo" onclick="resetFilter()">
+    </header>
+    
+    <main>
+        <section class="slider">
+            <!-- Содержание слайдера -->
+        </section>
+        <section class="products" id="products-section">
+            <!-- Продукты будут загружаться динамически -->
+        </section>
+        <section class="products" id="products-section-2">
+            <!-- Продукты будут загружаться динамически -->
+        </section>
+        <section id="about-us" class="about-us" style="display: none;">
+            <!-- Контент "О нас" будет отображаться здесь -->
+        </section>
+        <section id="contact-us" class="contact-us" style="display: none;">
+            <!-- Контент "Контакты" будет отображаться здесь -->
+        </section>
+    </main>
+
+    <aside class="cart" id="cart">
+        <h2>Корзина</h2>
+        <ul id="cart-items" class="cart-items-list">
+            <!-- Товары в корзине будут загружаться динамически -->
+        </ul>
+        <div class="total-price">
+            <p>Общая стоимость:</p>
+            <span id="total-price">0</span> руб.
+        </div>
+    </aside>
+    
+    <!-- Кнопка "Оформить заказ" в разделе "Корзина" -->
+    <button id="checkout-button">Оформить заказ</button>
+        
+    <!-- Модальное окно -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="modalClose">&times;</span>
+            <h2 id="modalProductName"></h2>
+            <img id="modalProductImage" src="" alt="">
+            <p id="modalProductPrice"></p>
+            <p id="modalProductDescription"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PixelPulse. Все права защищены.</p>
+    </footer>
+</body>
+</html>

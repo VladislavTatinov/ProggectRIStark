@@ -1,0 +1,405 @@
+/* Стили для заголовка */
+header {
+    background-color: #000;
+    color: #00FF00; /* Зеленый текст */
+    padding: 10px 0;
+    text-align: center;
+    font-family: monospace; /* Моноширинный шрифт для стиля хакера */
+    animation: blink 1s infinite; /* Применение анимации */
+    font-size: 20px;
+    position: relative; /* Относительное позиционирование для абсолютного позиционирования логотипа */
+}
+
+header h1 {
+    margin: 0;
+
+}
+
+/* Стили для навигационного меню */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    transform: scale(1.1); /* Увеличение размера при наведении */
+}
+
+nav ul li {
+    font-size: 16px;
+    margin: 10 px; /* Уменьшение расстояния между кнопками */
+}
+
+nav ul li a {
+    color: #00FF00; /* Зеленые ссылки */
+    text-decoration: none;
+    padding: 15px 15px; /* Уменьшение отступов внутри кнопок */
+    transform: scale(1.1); /* Увеличение размера при наведении */
+    font-family: monospace; /* Моноширинный шрифт для стиля хакера */
+}
+
+/* Стили для основного контента */
+main {
+    padding: 10px;
+}
+
+/* Стили для подвала */
+footer {
+    background-color: #000;
+    color: #00FF00; /* Зеленый текст */
+    text-align: center;
+    padding: 10px 0;
+    font-family: monospace; /* Моноширинный шрифт для стиля хакера */
+}
+
+/* Стили для продуктов */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 250px; /* Ширина каждого продукта */
+    position: relative; /* Относительное позиционирование для тени */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавление тени */
+    border-radius: 10px; /* Добавление скругленных углов */
+    overflow: hidden; /* Скрытие переполнения для плавного внешнего вида */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product button {
+    position: absolute; /* Абсолютное позиционирование для кнопки */
+    bottom: 10px; /* Добавление отступа снизу */
+    left: 50%; /* Позиционирование кнопки по центру по горизонтали */
+    transform: translateX(-50%); /* Корректировка позиции кнопки по горизонтали */
+    background-color: #00FF00; /* Зеленый фон */
+    color: #000; /* Черный текст */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: monospace; /* Моноширинный шрифт для стиля хакера */
+    border-radius: 10px; /* Добавление скругленных углов */
+}
+
+body {
+    font-size: 14px; /* Установка базового размера шрифта */
+}
+
+h1 {
+    font-size: 2em; /* Увеличение размера заголовков h1 */
+}
+
+h2 {
+    font-size: 2.0em; /* Увеличение размера заголовков h2 */
+}
+
+p {
+    font-size: 1.2em; /* Увеличение размера обычного текста */
+}
+
+.nvidia-logo {
+    max-width: 200px; /* Максимальная ширина логотипа Nvidia */
+    height: auto; /* Поддержание соотношения сторон */
+    position: absolute; /* Абсолютное позиционирование для расположения в верхнем правом углу */
+    top: 68px; /* Отступ от верхнего края */
+    left: 100px; /* Отступ от правого края */
+    transform: rotate(0deg); /* Поворот логотипа */
+    transition: transform 2s linear; /* Добавление перехода для плавного вращения */
+}
+
+/* Стили для кнопок "Купить" */
+button {
+    background-color: #29911b; /* Зеленый фон */
+    color: #000; /* Черный текст */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: monospace; /* Моноширинный шрифт для стиля хакера */
+    border-radius: 10px; /* Добавление скругленных углов */
+}
+
+button:hover {
+    background-color: #008000; /* Темно-зеленый цвет при наведении */
+}
+
+/* Анимация для вращения логотипа */
+@keyframes rotateLogo {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Применение анимации к логотипу */
+.nvidia-logo.rotate {
+    animation: rotateLogo 10s linear infinite; /* Бесконечное вращение логотипа */
+}
+
+/* Стили для корзины */
+.cart {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20
+}
+
+.cart h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.cart-items-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-items-list li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.total-price {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.total-price p {
+    margin: 0;
+}
+
+.total-price span {
+    font-weight: bold;
+}
+
+.cart {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.cart h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2em; 
+    font-family: monospace;  
+}
+
+.cart-items-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-items-list li {
+    margin-bottom: 10px;
+    font-size: 1.6em; /* Увеличиваем размер текста товаров */
+    font-family: monospace; /* Шрифт в стиле хакера */
+}
+
+.total-price {
+    margin-top: 20px;
+    font-size: 1.9em; /* Увеличиваем размер текста общей стоимости */
+    font-family: monospace; /* Шрифт в стиле хакера */
+}
+
+.total-price p {
+    margin: 0;
+}
+
+.total-price span {
+    font-weight: bold;
+}
+
+/* Стили для кнопки "Оформить заказ" */
+#checkout-button {
+    font-size: 18px; /* Устанавливаем размер шрифта */
+    padding: 10px 20px; /* Устанавливаем отступы вокруг текста кнопки */
+    border-radius: 5px; /* Добавляем скругления краев кнопки */
+    background-color: #25e552; /* Устанавливаем цвет фона кнопки */
+    color: #fff; /* Устанавливаем цвет текста кнопки */
+    border: none; /* Убираем границу у кнопки */
+    cursor: pointer; /* Устанавливаем указатель мыши на кнопке */
+    transition: background-color 0.3s ease; /* Добавляем плавный переход при наведении на кнопку */
+}
+
+/* Стили для изменения внешнего вида кнопки при наведении */
+#checkout-button:hover {
+    background-color: #0056b3; /* Изменяем цвет фона при наведении */
+}
+
+.product button:hover {
+    background-color: #0056b3; /* Изменяем фон кнопки на синий при наведении */
+}
+
+/* Анимация увеличения при наведении на кнопки */
+nav ul li a:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб кнопки при наведении */
+}
+
+nav ul li a.reset-button:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб кнопки "Reset" при наведении */
+}
+
+        /* Стили для кнопки "Удалить" */
+        .cart-items-list button {
+            font-size: 0.8em; /* уменьшение размера текста */
+            padding: 2px 6px; /* уменьшение отступов */
+            margin-left: 10px; /* добавление отступа слева */
+            border-radius: 4px; /* скругленные углы */
+            background-color: #f44336; /* цвет фона */
+            color: white; /* цвет текста */
+            border: none; /* убираем границу */
+            cursor: pointer; /* указатель курсора при наведении */
+            transition: transform 0.3s ease; /* добавляем плавный переход */
+        }
+
+        /* Эффект увеличения при наведении */
+        .cart-items-list button:hover {
+            background-color: #d32f2f; /* темнее цвет при наведении */
+            transform: scale(1.1); /* увеличиваем размер */
+        }
+
+        /* Стили для кнопки "Оформить заказ" */
+        #checkout-button {
+            font-size: 1em; /* размер текста */
+            padding: 10px 20px; /* отступы */
+            border-radius: 5px; /* скругленные углы */
+            background-color: #4CAF50; /* цвет фона */
+            color: white; /* цвет текста */
+            border: none; /* убираем границу */
+            cursor: pointer; /* указатель курсора при наведении */
+            transition: transform 0.3s ease; /* добавляем плавный переход */
+        }
+
+        /* Эффект увеличения при наведении */
+        #checkout-button:hover {
+            background-color: #4CAF50; /* темнее цвет при наведении */
+            transform: scale(1.1); /* увеличиваем размер */
+        }
+
+        /* Стили для кнопок "Купить" */
+        .product button {
+            position: absolute; /* позиция */
+            bottom: 10px; /* отступ снизу */
+            left: 50%; /* центрирование по горизонтали */
+            transform: translateX(-50%); /* корректировка позиции */
+            background-color: #4CAF50; /* зеленый фон */
+            color: #000; /* черный текст */
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-family: monospace; /* моноширинный шрифт */
+            border-radius: 10px; /* скругленные углы */
+        }
+
+
+        /* Стили для ссылок навигации */
+        nav ul li a {
+            color: #00FF00; /* зеленые ссылки */
+            text-decoration: none;
+            font-size: 1.6em; /* увеличиваем размер текста */
+            padding: 20px 30px; /* увеличиваем отступы */
+            font-family: monospace; /* моноширинный шрифт */
+            transition: transform 0.3s ease; /* добавляем плавный переход */
+        }
+
+        /* Эффект увеличения при наведении */
+        nav ul li a:hover {
+            transform: scale(1.1); /* увеличиваем размер */
+        }
+
+        /* Стили для модального окна */
+        .modal {
+            display: none; /* скрыто по умолчанию */
+            position: fixed; /* фиксированное положение */
+            z-index: 1; /* поверх других элементов */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* включаем прокрутку при необходимости */
+            background-color: rgba(0,0,0,0.4); /* полупрозрачный фон */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* центровка модального окна */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* ширина модального окна */
+            max-width: 600px; /* максимальная ширина */
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease; /* добавляем плавный переход */
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Стили для продуктов */
+        .product {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s ease; /* добавляем плавный переход */
+        }
+
+        /* Эффект увеличения при наведении на продукты */
+        .product:hover {
+            transform: scale(1.05); /* увеличиваем размер */
+        }
+
+        #about-us {
+            font-size: 1.7em; /* Увеличение размера текста */
+            color: rgb(0, 0, 0); /* Цвет текста */
+            animation: blink-animation 1s infinite; /* Анимация мигания */
+        }
+
+        /* Стили для увеличения изображений в списке контактов */
+ul li img {
+    width: 32px; /* Увеличение ширины изображения */
+    height: auto; /* Сохранение пропорций */
+    vertical-align: middle; /* Выравнивание по середине */
+}
+
+#about-us {
+    text-align: center; /* Выравнивание текста по центру */
+    margin: 0 auto; /* Устанавливаем отступы по бокам, чтобы элемент был по центру */
+    width: 80%; /* Задаем фиксированную ширину элемента */
+    max-width: 800px; /* Опционально: устанавливаем максимальную ширину элемента */
+}
+
+
+.about-us .about-us-text {
+    flex: 2;
+    padding: 0 20px; /* Отступы для разделения текста и изображений */
+    text-align: justify; /* Выравнивание текста по ширине */
+}
+
+
